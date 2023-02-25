@@ -127,4 +127,4 @@ fun ScreenB(message: String) {
 
 ## Limination
 
-Currently only available primitive types but not a Double , because of NavType.DoubleType not support by compose navigation.
+Currently not available default value in arguments and only available primitive types but not a Double , because of NavType.DoubleType not support by compose navigation.
