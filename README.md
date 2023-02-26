@@ -9,13 +9,13 @@ A sample compose navigation destination code generation with kotlin symbols proc
 
 There are two screens , ScreenA (start destination) and ScreenB
 
-```
+```kotlin
 @Destination("screen_a")
 class ScreenA {
 }
 ```
 
-```
+```kotlin
 @Destination("screen_b")
 data class ScreenB(
     val message : String
@@ -28,7 +28,7 @@ ScreenA want to pass message string to ScreenB.
 
 For ScreenA
 
-```
+```kotlin
 public object ScreenADestination {
   public fun destination(): String = "screen_a"
 
@@ -39,7 +39,7 @@ public object ScreenADestination {
 
 For ScreenB
 
-```
+```kotlin
 public object ScreenBDestination {
   public val MESSAGE: String = "message"
 
@@ -59,7 +59,7 @@ public object ScreenBDestination {
 
 ### Example Usage
 
-```
+```kotlin
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
